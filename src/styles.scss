@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* fonts */
+@font-face{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    src: url(assets/fonts/SourceSansPro-Regular.ttf);
+}
+
+/* css variables*/
+:root{
+    --font-family:'Source Sans Pro';
+}
