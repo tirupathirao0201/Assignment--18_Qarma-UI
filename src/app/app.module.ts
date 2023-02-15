@@ -7,6 +7,7 @@ import { HeaderComponent } from './common/components/header/header.component';
 import { FooterComponent } from './common/components/footer/footer.component';
 import { AlertContainerComponent } from './common/components/alert-container/alert-container.component';
 import { TabsComponent } from './common/components/tabs/tabs.component';
+import { ToastComponent } from './common/components/toast/toast.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TabsComponent } from './common/components/tabs/tabs.component';
     HeaderComponent,
     FooterComponent,
     AlertContainerComponent,
-    TabsComponent
+    TabsComponent,
+    ToastComponent
   ],
   imports: [
     BrowserModule,

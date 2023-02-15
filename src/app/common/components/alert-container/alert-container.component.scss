@@ -54,7 +54,9 @@
                 cursor: pointer;
                 span{
                     color:var(--white-color);
-                    font-family:var(--font-family)
+                    font-family:var(--font-family);
+                    display:inline-block;
+                    padding: 0px 10px;
                 }
             }
             .alert__button-secondary{
@@ -62,6 +64,8 @@
                 cursor: pointer;
                 span{
                     color: var(--blue-color);
+                    display:inline-block;
+                    padding: 0px 10px;
                 }
             }
         }

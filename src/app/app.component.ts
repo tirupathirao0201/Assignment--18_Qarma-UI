@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Alert } from './models/interfaces';
+import { Alert, Toast } from './models/interfaces';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +9,7 @@ import { Alert } from './models/interfaces';
 export class AppComponent {
   title = 'QarmaProject';
   showAlert:boolean=false; // flag which handles whether the alert should display or not
+  showToast:boolean=false;
   popupData: Alert = {
     alert_type: 'Remove User',
     label: 'Anuja kumari',
@@ -21,9 +22,26 @@ export class AppComponent {
     this.showAlert=true;
   }
 
+  handleToast(){
+    this.showToast=true;
+  }
+
   // handles the response from alert component
   handleResponse(event:any){
     console.log(event);
     this.showAlert=false;
   }
+
+  toast:Toast={
+    msg: 'Successfully added',
+    type: 'error',
+    timeout: 5000
+  }
+
+  // handles toast response  which is used to destroy the component toast component
+  handleToastResponse(event:boolean){
+    this.showToast=event;
+    console.log("I am in app",event);
+  }
+
 }
