@@ -1,2 +1,4 @@
 <app-header></app-header>
+<button (click)="handleAlert()">PopUP</button>
+<app-alert-container [alert]="popupData" *ngIf="showAlert" (status)="handleResponse($event)"></app-alert-container>
 <app-footer></app-footer>
